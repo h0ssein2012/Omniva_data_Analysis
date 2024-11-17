@@ -1,0 +1,37 @@
+TransportPartner;ProductCategory;TransportCostUnitKm
+Argo;Communication drums;0,03
+Aurora;Communication drums;0,02
+Black Pearl;Communication drums;0,025
+Nautilus;Communication drums;0,04
+Santa Marta;Communication drums;0,03
+Titanic;Communication drums;0,02
+U-571;Communication drums;0,032
+Yellow Submarine;Communication drums;0,022
+U-571;Faxes;0,016
+Argo;Heliographs;0,015
+Black Pearl;Heliographs;0,0125
+Nautilus;Heliographs;0,02
+Santa Marta;Heliographs;0,015
+Titanic;Heliographs;0,01
+U-571;Heliographs;0,016
+Yellow Submarine;Heliographs;0,011
+Black Pearl;Maritime flags;0,0075
+Nautilus;Maritime flags;0,12
+Titanic;Maritime flags;0,06
+U-571;Maritime flags;0,096
+Yellow Submarine;Maritime flags;0,066
+Black Pearl;Papyrus;0,05
+Argo;Pens;0,06
+Black Pearl;Pens;0,05
+Santa Marta;Pens;0,06
+Titanic;Pens;0,04
+U-571;Pens;0,064
+Yellow Submarine;Pens;0,044
+Black Pearl;Printing press;0,075
+Yellow Submarine;Radios;0,0154
+Yellow Submarine;Satellites;0,066
+Black Pearl;Semaphores;0,02
+Yellow Submarine;Telegraph;0,088
+U-571;Telephones;0,0288
+U-571;Typewriters;0,064
+Yellow Submarine;Typewriters;0,044
