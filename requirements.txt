@@ -1,0 +1,9 @@
+pandas
+numpy
+plotly
+nbformat
+matplotlib
+watchdog
+streamlit-extras
+streamlit
+geopy
