@@ -8,10 +8,15 @@ load_logo()
 repairs_data_df = load_repair_data()
 
 # Streamlit App
-st.title("Geographic Analysis for Shipping Locations")
-
-# Visualize distribution of shipping locations
-st.header("Distribution of Shipping Locations by Country or Region")
+st.markdown(
+    """
+    <div style="background-color:#f86201;padding:10px;border-radius:5px;text-align:center;color:white;">
+    <h1>Geographic Analysis for Shipping Locations</h1>
+    </div>
+        <br>
+    """,
+    unsafe_allow_html=True
+)
 
 # Aggregate data to count the number of shipments per country
 shipments_per_country = repairs_data_df['ShipLocCy'].value_counts().reset_index()
@@ -47,7 +52,6 @@ fig_shipments_mapbox = px.scatter_mapbox(
     size='ShipmentCount',
     color='ShipmentCount',
     hover_name='Country',
-    title='Distribution of Shipping Locations by Country',
     color_continuous_scale=[[0, "#d3d3d3"], [1, "#f86201"]],
     size_max=30,
     zoom=3
@@ -55,7 +59,17 @@ fig_shipments_mapbox = px.scatter_mapbox(
 
 fig_shipments_mapbox.update_layout(
     mapbox_style="open-street-map",
-    margin={"r": 0, "t": 50, "l": 0, "b": 0}
+    margin={"r": 0, "t": 50, "l": 0, "b": 0},
+    title={
+        'text': 'Distribution of Shipping Locations by Country',
+        'x': 0.5,
+        'xanchor': 'center',
+        'y': .99,
+        'yanchor': 'top',
+        'font': {
+            'size': 24
+        }
+    },
 )
 
 st.plotly_chart(fig_shipments_mapbox)

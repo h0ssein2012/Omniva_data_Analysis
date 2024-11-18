@@ -10,7 +10,16 @@ repairs_data_df = load_repair_data()
 repairs_data_df['RepairTimeDays'] = repairs_data_df['RepairTime'] / 24
 
 # Streamlit App
-st.title("Repair Process Efficiency Analysis")
+st.markdown(
+    """
+    <div style="background-color:#f86201;padding:10px;border-radius:5px;text-align:center;color:white;">
+    <h1>Repair Process Efficiency Analysis</h1>
+    </div>
+        <br>
+
+    """,
+    unsafe_allow_html=True
+)
 # Forecast Return Demand Based on Repair Times
 st.header("Demand Forecasting for Return Shipments")
 
