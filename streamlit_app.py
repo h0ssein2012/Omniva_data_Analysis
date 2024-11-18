@@ -1,9 +1,6 @@
 import streamlit as st
-import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
 from utils.funcs import load_repair_data, load_logo
-# Main page description
+
 from pathlib import Path
 from PIL import Image
 

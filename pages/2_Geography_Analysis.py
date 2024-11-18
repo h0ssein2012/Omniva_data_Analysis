@@ -60,10 +60,14 @@ fig_shipments_mapbox.update_layout(
 
 st.plotly_chart(fig_shipments_mapbox)
 
-# Identify areas with high transportation demand
-st.header("Areas with High Transportation Demand")
+st.header("Transportation Demand per region")
 
 # Display countries with the highest number of shipments
-top_shipping_countries = shipments_per_country.head(10)
-st.write("Top 10 Countries with Highest Transportation Demand:")
-st.dataframe(top_shipping_countries)
+fig = px.bar(shipments_per_country, x='Country'
+             , y='ShipmentCount', title='Number of Orders per country'
+             ,text='ShipmentCount'
+             , color_discrete_sequence=['#f86201'])
+fig.update_layout(xaxis_title='Country', yaxis_title='Number of Orders')
+fig.update_traces(textposition="inside", textfont=dict(color="white",size=14))
+
+st.plotly_chart(fig)

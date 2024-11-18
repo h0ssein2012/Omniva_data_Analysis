@@ -35,13 +35,6 @@ fig_transport_cost.add_trace(go.Scatter(
     marker=dict(size=10, color='#f86201'),  # Increase marker size and set color
     textfont=dict(color='black')  # Set text font color to black
 ))
-# fig_transport_cost.update_traces(
-#     mode='markers+text',
-#     textposition='top center',
-#     marker=dict(size=12, color='#f86201'),
-#     textfont=dict(color='black'),
-#     selector=dict(name='Average Transport Cost')
-# )
 
 # Update layout for dual y-axis
 fig_transport_cost.update_layout(
